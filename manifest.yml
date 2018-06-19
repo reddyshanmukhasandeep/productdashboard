@@ -1,0 +1,10 @@
+--- 
+applications: 
+  - 
+    buildpack: "https://github.com/cloudfoundry/java-buildpack"
+    instances: 1
+    memory: 1G
+    name: productsapi
+    path: target/product-dashboard-0.0.1-SNAPSHOT.jar
+    services: 
+      - productsdb
